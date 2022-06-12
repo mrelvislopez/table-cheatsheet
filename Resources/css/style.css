@@ -152,9 +152,13 @@ footer{
 /* Mobile Styles */
 @media only screen and (max-width: 640px) {
     
-    /* Top Banner */
-    header, #tags{
+    /* Padding change for Top Banner, Tags Section, Attributes Section, Table Code Section  */
+    header, #tags, #attributes, #tablecode{
         padding: 20px;
+    }
+
+    #blkbx{
+        margin: 20px;
     }
     
     header h1{
@@ -169,5 +173,10 @@ footer{
     #anchors a{
         display: block;
         margin-bottom: 10px; 
+    }
+
+    /* Footer padding */
+    footer{
+        padding: 0px 20px;
     }
 }
