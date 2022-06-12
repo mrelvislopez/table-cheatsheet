@@ -3,8 +3,9 @@ body{
     background-color: #efefef;
 }
 /* Fonts */
+
 h1{
-    font-size: 90px;
+    font-size: 5rem;
     font-family: elza, sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -12,7 +13,7 @@ h1{
 }
 
 h2{
-    font-size: 48px;
+    font-size: 3rem;
     font-family: elza, sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -26,7 +27,7 @@ h3{
 
 p,a{
     font-family: 'Azeret Mono', monospace;
-    font-size: 16px;
+    font-size: 1rem;
     color: black;
 }
 
