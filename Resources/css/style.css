@@ -151,12 +151,10 @@ footer{
 }
 /* Mobile Styles */
 @media only screen and (max-width: 640px) {
-    /* Top Banner */
     
-    header{
+    /* Top Banner */
+    header, #tags{
         padding: 20px;
-        border:  5px solid  #000;
-        border-bottom: 20px solid #000;
     }
     
     header h1{
