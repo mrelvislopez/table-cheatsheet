@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Cheatsheet
+    </title>
+    <link rel="stylesheet" href="./Resources/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/etj8gxt.css">
+</head>
+<body>
+    <header>
+        <h1>&lt;/&gt;Table Cheatsheet</h1>
+        <div id="anchors">
+            <a id="tagsb" href="#tags">Table Tags &#8595;</a>
+            <a id="attb" href="#attributes">Table Attributes &#8595;</a>
+            <a id="tableb" href="#tablecode">Table Code &#8595;</a>
+        </div>
+    </header>
+
+    <!-- Tags Section -->
+    <div id="tags">
+        <h2>Table Tags</h2>
+        <p><strong>Table nested order:</strong></p>
+        <table>
+            <thead>
+              <tr>
+               <th>Name</th>
+               <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>&lt;table&gt;</td>
+                <td>The wrapper element for all HTML tables</td>
+              </tr>
+              <tr>
+                <td>&lt;thead&gt;</td>
+                <td>The set of rows defining the column headers in a table</td>
+              </tr>
+              <tr>
+                <td>&lt;tr&gt;</td>
+                <td>The table row container(in this case, it will contain the enclosed elements &lt;th&gt;&lt;/th&gt;)</td>
+              </tr>
+              <tr>
+                <td>&lt;th&gt;</td>
+                <td>Used to add titles to rows and columns of a table</td>
+              </tr>
+              <tr>
+                <td id="splitter" colspan="2">Table head structure ends here and the table body begins. Example: <i>Name, Description.</i>Shown on this table above &#8593;</td>
+              </tr>
+              <tr>
+                <td>&lt;tbody&gt;</td>
+                <td>The set of rows containing actual table data</td>
+              </tr>
+              <tr>
+                <td>&lt;tr&gt;</td>
+                <td>The table row container(it will contain the enclosed elements &lt;td&gt;&lt;/td&gt;)</td>
+              </tr>
+              <tr>
+                <td>&lt;td&gt;</td>
+                <td>Adds a cell of data to a table row</td>
+              </tr>
+              <tr>
+                <td>&lt;tfoot&gt;</td>
+                <td>The set of rows defining the footer in a table</td>
+              </tr>
+              <tr>
+                <td>&lt;tr&gt;</td>
+                <td>The table row container(it will contain the enclosed elements &lt;td&gt;&lt;/td&gt;)</td>
+              </tr>
+              <tr>
+                <td>&lt;td&gt;</td>
+                <td>Adds a cell of data to a table row</td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+     <!-- Dotted Divider -->
+     <br><br><br>
+     <hr class="dotted">
+
+     <!-- Attributes Section -->
+    <div id="attributes">
+        <h2>Attributes</h2>
+        <table>
+            <thead>
+              <tr>
+               <th>Name</th>
+               <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>colspan</td>
+                <td>The colspan attribute on a table header <strong>&lt;th&gt;</strong> or table data &lt;td&gt; element indicates how many columns that particular cell should span within the table. The colspan value is set to 1 by default and will take any positive integer between 1 and 1000.</td>
+              </tr>
+              <tr>
+                <td>rowspan</td>
+                <td>Similar to colspan, the rowspan attribute on a table header or table data element indicates how many rows that particular cell should span within the table. The rowspan value is set to 1 by default and will take any positive integer up to 65534.</td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Dotted Divider -->
+    <br><br><br>
+    <hr class="dotted">
+    <h2 id="tablecode">Table HTML Code Reference</h2>
+    
+    <!-- Table in Action -->
+
+    <div id="blkbx">
+
+        <p>&lt;table&gt;</p>  
+            <p>&nbsp;&nbsp;&lt;thead&gt;</p>  
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th <span class="codespan">colspan</span><span class="codetxt">=</span><span class="spannumber">"2"</span>&gt;<span class="codetxt">This will span 2 columns</span>&lt;/th&gt;</p> 
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;<span class="codetxt">This will only span the 1 column by default</span>&lt;/th&gt;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</p>
+                <p>&nbsp;&nbsp;&lt;/thead&gt;</p>
+
+            <p>&nbsp;&nbsp;&lt;tbody&gt;</p> 
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td <span class="codespan">rowspan</span><span class="codetxt">=</span><span class="spannumber">"2"</span>&gt;<span class="codetxt">This will span 2 rows</span>&lt;/td&gt;</p> 
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;<span class="codetxt">This will only span the 1 row by default</span>&lt;/td&gt;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;<span class="codetxt">This will only span the 1 row by default</span>&lt;/td&gt;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;/td&gt;</p> 
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;/td&gt;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;/td&gt;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</p>
+            <p>&nbsp;&nbsp;&lt;/tbody&gt;</p>
+            <p>&nbsp;&nbsp;&lt;tfoot&gt;</p> 
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;/td&gt;</p> 
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;/td&gt;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</p>
+            <p>&nbsp;&nbsp;&lt;/tfoot&gt;</p> 
+        <p>&lt;/table&gt;</p> 
+    </div>
+
+    <br><br><br>
+    <footer>
+        <p> – An Elvis L. Cheatsheet</p>
+  </footer>
+    
+</body>
+</html>
