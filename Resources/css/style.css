@@ -154,11 +154,11 @@ footer{
     
     /* Padding change for Top Banner, Tags Section, Attributes Section, Table Code Section  */
     header, #tags, #attributes, #tablecode{
-        padding: 20px;
+        padding: 10px;
     }
 
     #blkbx{
-        margin: 20px;
+        margin: 10px;
     }
     
     header h1{
